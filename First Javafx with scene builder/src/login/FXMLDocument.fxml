@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="nextstage" prefHeight="333.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.FXMLDocumentController">
+    <children>
+        <Button id="btnLogin" fx:id="btnLogin" layoutX="183.0" layoutY="197.0" onAction="#handleLoginAction" text="login">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TextField fx:id="txtUsername" layoutX="211.0" layoutY="110.0" promptText="username" />
+      <Label layoutX="111.0" layoutY="115.0" text="Username">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="118.0" layoutY="148.0" text="Password">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="199.0" layoutY="64.0" text="Please Login Here" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#473870">
+               <input>
+                  <Blend />
+               </input></DropShadow>
+         </effect>
+      </Label>
+      <Label id="lblTopic" layoutX="136.0" layoutY="30.0" text="Student Registration System" textFill="#e10f0f">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="210.0" layoutY="145.0" promptText="password" />
+      <Button id="txtSignup" fx:id="btnsignup" layoutX="286.0" layoutY="197.0" mnemonicParsing="false" onAction="#signUpAction" text="Sign up">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label fx:id="lblLoginStatus" layoutX="186.0" layoutY="258.0" />
+      <ImageView fitHeight="104.0" fitWidth="109.0" layoutX="4.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pckgimage/user.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
